@@ -2,16 +2,16 @@
 
 Nama Kelompok :
 
-Irfan Arianto (16.11.0376)
-Boby Hartanto Arif Saputro (16.11.0364)
-Yuliana Rahmat Suryadi (16.11.0367)
-Azizi Damara Putra (16.11.0383)
+Irfan Arianto (16.11.0376) <br>
+Boby Hartanto Arif Saputro (16.11.0364)<br>
+Yuliana Rahmat Suryadi (16.11.0367)<br>
+Azizi Damara Putra (16.11.0383)<br>
 
 Nama Startup : Sportsnesia
 
 Kategori : Sports (Olahraga)
 
-Deskpripsi : Sportsnesia adalah Platform mencari berbagai macam tempat Olahraga terdekat, Booking tempat Olahraga, dan Join/Berolahraga bersama teman baru. Buat Tim akan memudahkan dalam berinteraksi, User dapat mengikuti berbagai Event olahraga yang berlangsung.
+Deskpripsi : Sportsnesia adalah Platform mencari berbagai macam tempat Olahraga terdekat, Booking tempat Olahraga, dan Join/Berolahraga bersama teman baru.
 
 Fitur Umum :
 
