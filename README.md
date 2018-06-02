@@ -6,6 +6,7 @@ Irfan Arianto (16.11.0376)
 Boby Hartanto Arif Saputro (16.11.0364)
 Yuliana Rahmat Suryadi (16.11.0367)
 Azizi Damara Putra (16.11.0383)
+
 Nama Startup : Sportsnesia
 
 Kategori : Sports (Olahraga)
