@@ -19,7 +19,7 @@ Fitur Umum :
 - FAQ
 - JOIN US
 - About Us
-- Services
+- Features
 
 Fitur User Pemain :
 - Nearby
