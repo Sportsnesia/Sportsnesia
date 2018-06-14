@@ -8,6 +8,12 @@ body {
     text-align: center;
 }
 
+.why-us {
+	font-family: 'Josefin Sans', sans-serif; font-size: 30px; float: left; margin-left: 10%; font-weight: 300; color: #555; line-height: 40px;
+}
+
+
+
 strong { font-weight: 500; }
 
 a, a:hover, a:focus {
