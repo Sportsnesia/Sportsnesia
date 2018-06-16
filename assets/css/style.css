@@ -138,7 +138,8 @@ ul.navbar-nav li a.btn-link-3:active:focus { outline: 0; background: #EF6C00; co
 
 /***** Footer *****/
 
-footer { padding: 40px 0 45px 0; background: #f8f8f8; }
+.footer { padding: 40px 0 45px 0; background: #e8e8e8; }
+.footer-2 { padding:0 0 45px 0; background: #f8f8f8; } 
 
 .footer-copyright { padding-top: 15px; }
 .footer-copyright a { color: #888; border-bottom: 1px dotted #888; }
