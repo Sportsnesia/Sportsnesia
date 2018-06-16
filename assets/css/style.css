@@ -145,6 +145,33 @@ ul.navbar-nav li a.btn-link-3:active:focus { outline: 0; background: #EF6C00; co
 .footer-copyright a { color: #888; border-bottom: 1px dotted #888; }
 .footer-copyright a:hover, .footer-copyright a:focus { color: #888; border: 0; }
 
+.diliput {
+	width: 200px;
+	height: 51px;
+	-webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
+    filter: grayscale(100%);
+}
+
+.diliput1 {
+	width: 200px;
+	height: 55px;
+	-webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
+    filter: grayscale(100%);
+}
+
+.diliput2 {
+	width: 140px;
+	height: 80px;
+	-webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
+    filter: grayscale(100%);
+}
+
+.diliput3 {
+	width: 200px;
+	height: 65px;
+	-webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
+    filter: grayscale(100%);
+}
 
 
 /***** MEDIA QUERIES *****/
