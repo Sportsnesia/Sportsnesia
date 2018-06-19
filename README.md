@@ -11,7 +11,7 @@ Nama Startup : Sportsnesia
 
 Kategori : Sports (Olahraga)
 
-Deskpripsi : Sportsnesia adalah Platform yang dapat mencari berbagai macam tempat Olahraga terdekat, Booking tempat Olahraga, dan dapan menghubungkan kamu dengan orang-orang yang bisa kamu ajak menjadi lawan dalam aktivitas olahraga. Sportsnesia bisa mencari teman olahraga berdasarkan jarak terdekat dan jenis olahraga dengan notifikasi secara real time.
+Deskpripsi : Sportsnesia adalah Platform yang dapat mencari berbagai macam tempat Olahraga terdekat, Booking tempat Olahraga, dan dapat menghubungkan kamu dengan orang-orang yang bisa kamu ajak menjadi lawan dalam aktivitas olahraga. Sportsnesia bisa mencari teman olahraga berdasarkan jarak terdekat dan jenis olahraga dengan notifikasi secara real time.
 
 Fitur Umum :
 
