@@ -250,5 +250,7 @@ only screen and (                min-resolution: 2dppx) {
     
     .navbar-no-bg .navbar-brand { background-image: url(../img/logo-dark@2x.png); }
 	
+	/*kategori*/
 
+	.futsal {background-image: url(../img/futsal@2x.jpg);}
 }
