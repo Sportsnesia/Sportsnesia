@@ -55,9 +55,53 @@
   function RetinaImagePath(path) {
     this.path = path;
     this.at_2x_path = path.replace(/\.\w+$/, function(match) { return "@2x" + match; });
-  }
+ }
+  var scheduled,
+    scheduleSave,
+    doSave;
 
-  RetinaImagePath.confirmed_paths = [];
+  if (localStorage) {
+    if (localStorage.retinajs_confirmed_paths) {
+      try {
+        RetinaImagePath.confirmed_paths = JSON.parse(localStorage.retinajs_confirmed_paths);
+      } catch (ex) {
+        RetinaImagePath.confirmed_paths = {};
+      }
+    } else {
+      RetinaImagePath.confirmed_paths = {};
+    }
+    if (localStorage.retinajs_skip_paths) {
+      try {
+        RetinaImagePath.skip_paths = JSON.parse(localStorage.retinajs_skip_paths);
+      } catch (ex) {
+        RetinaImagePath.skip_paths = {};
+      }
+    } else {
+      RetinaImagePath.skip_paths = {};
+    }
+    scheduled = false;
+    scheduleSave = function scheduleSaveFunc() {
+      if (!scheduled) {
+        scheduled = true;
+        setTimeout(doSave, 10);
+      }
+    };
+    doSave = function doSaveFunc() {
+      if (localStorage) {
+        try {
+          localStorage.retinajs_confirmed_paths = JSON.stringify(RetinaImagePath.confirmed_paths);
+          localStorage.retinajs_skip_paths = JSON.stringify(RetinaImagePath.skip_paths);
+        } catch (ex) {
+          scheduleSave = doSave = function(){};
+        }
+      }
+      scheduled = false;
+    };
+  } else {
+   RetinaImagePath.confirmed_paths = {};
+   RetinaImagePath.skip_paths = {};
+    scheduleSave = doSave = function(){};
+  }
 
   RetinaImagePath.prototype.is_external = function() {
     return !!(this.path.match(/^https?\:/i) && !this.path.match('//' + document.domain) )
@@ -67,7 +111,10 @@
     var http, that = this;
     if (this.is_external()) {
       return callback(false);
-    } else if (this.at_2x_path in RetinaImagePath.confirmed_paths) {
+    } else if (RetinaImagePath.skip_paths[this.at_2x_path]) {
+      return callback(false);
+    } else if (RetinaImagePath.confirmed_paths[this.at_2x_path]) {
+
       return callback(true);
     } else {
       http = new XMLHttpRequest;
@@ -81,17 +128,24 @@
           if (config.check_mime_type) {
             var type = http.getResponseHeader('Content-Type');
             if (type == null || !type.match(/^image/i)) {
+              RetinaImagePath.skip_paths[that.at_2x_path] = 1;
+              scheduleSave();
               return callback(false);
             }
           }
 
-          RetinaImagePath.confirmed_paths.push(that.at_2x_path);
+         RetinaImagePath.confirmed_paths[that.at_2x_path] = 1;
+          scheduleSave();
           return callback(true);
         } else {
+
+          RetinaImagePath.skip_paths[that.at_2x_path] = 1;
+          scheduleSave();
+
           return callback(false);
         }
       }
-      https.send();
+      http.send();
     }
   }
 
