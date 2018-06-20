@@ -56,6 +56,7 @@
     this.path = path;
     this.at_2x_path = path.replace(/\.\w+$/, function(match) { return "@2x" + match; });
  }
+
   var scheduled,
     scheduleSave,
     doSave;
@@ -105,7 +106,11 @@
 
   RetinaImagePath.prototype.is_external = function() {
     return !!(this.path.match(/^https?\:/i) && !this.path.match('//' + document.domain) )
-  }
+  
+    var http, that = this;    
+     if (this.is_external()) {
+       return callback(false);
+  
 
   RetinaImagePath.prototype.check_2x_variant = function(callback) {
     var http, that = this;
@@ -148,6 +153,7 @@
       http.send();
     }
   }
+}
 
 
 
