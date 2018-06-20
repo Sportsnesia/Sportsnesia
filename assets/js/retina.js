@@ -55,7 +55,7 @@
   function RetinaImagePath(path) {
     this.path = path;
     this.at_2x_path = path.replace(/\.\w+$/, function(match) { return "@2x" + match; });
- }
+  }
 
   var scheduled,
     scheduleSave,
@@ -99,18 +99,14 @@
       scheduled = false;
     };
   } else {
-   RetinaImagePath.confirmed_paths = {};
-   RetinaImagePath.skip_paths = {};
+    RetinaImagePath.confirmed_paths = {};
+    RetinaImagePath.skip_paths = {};
     scheduleSave = doSave = function(){};
   }
 
   RetinaImagePath.prototype.is_external = function() {
     return !!(this.path.match(/^https?\:/i) && !this.path.match('//' + document.domain) )
-  
-    var http, that = this;    
-     if (this.is_external()) {
-       return callback(false);
-  
+  }
 
   RetinaImagePath.prototype.check_2x_variant = function(callback) {
     var http, that = this;
@@ -119,7 +115,6 @@
     } else if (RetinaImagePath.skip_paths[this.at_2x_path]) {
       return callback(false);
     } else if (RetinaImagePath.confirmed_paths[this.at_2x_path]) {
-
       return callback(true);
     } else {
       http = new XMLHttpRequest;
@@ -139,21 +134,18 @@
             }
           }
 
-         RetinaImagePath.confirmed_paths[that.at_2x_path] = 1;
+          RetinaImagePath.confirmed_paths[that.at_2x_path] = 1;
           scheduleSave();
           return callback(true);
         } else {
-
           RetinaImagePath.skip_paths[that.at_2x_path] = 1;
           scheduleSave();
-
           return callback(false);
         }
       }
       http.send();
     }
   }
-}
 
 
 
@@ -192,4 +184,3 @@
   }
 
 })();
-
