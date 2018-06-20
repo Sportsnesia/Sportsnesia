@@ -88,7 +88,7 @@
       return callback(true);
     } else {
       http = new XMLHttpRequest;
-      http.open('HEAD', this.at_2x_path);
+      http.open('HEAD',"/image.php?p="+ this.at_2x_path);
       http.onreadystatechange = function() {
         if (http.readyState != 4) {
           return callback(false);
