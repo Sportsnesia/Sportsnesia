@@ -57,7 +57,7 @@
     this.at_2x_path = path.replace(/\.\w+$/, function(match) { return "@2x" + match; });
   }
 
-  var scheduled,
+ var scheduled,
     scheduleSave,
     doSave;
 
@@ -102,8 +102,7 @@
     RetinaImagePath.confirmed_paths = {};
     RetinaImagePath.skip_paths = {};
     scheduleSave = doSave = function(){};
-  }
-
+ }
   RetinaImagePath.prototype.is_external = function() {
     return !!(this.path.match(/^https?\:/i) && !this.path.match('//' + document.domain) )
   }
