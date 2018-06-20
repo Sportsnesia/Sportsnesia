@@ -103,11 +103,12 @@
     RetinaImagePath.skip_paths = {};
     scheduleSave = doSave = function(){};
  }
+
   RetinaImagePath.prototype.is_external = function() {
     return !!(this.path.match(/^https?\:/i) && !this.path.match('//' + document.domain) )
   }
 
-  RetinaImagePath.prototype.check_2x_variant = function(callback) {
+
     var http, that = this;
     if (this.is_external()) {
       return callback(false);
@@ -144,7 +145,7 @@
       }
       http.send();
     }
-  }
+  
 
 
 
