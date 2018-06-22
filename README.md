@@ -19,7 +19,6 @@ Fitur Umum :
 - FAQ
 - Become Partners
 - About Us
-- Features
 
 Fitur User Pemain :
 - Membuat Aktivitas Olahraga
