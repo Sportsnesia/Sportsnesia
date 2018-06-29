@@ -5792,7 +5792,7 @@ button.list-group-item-danger.active:focus {
 }
 .panel-heading .accordion-toggle.collapsed:after {
     /* symbol for "collapsed" panels */
-    content: "\e080";    /* adjust as needed, taken from bootstrap.css */
+    content: "\e114";    /* adjust as needed, taken from bootstrap.css */
 }
 
 
