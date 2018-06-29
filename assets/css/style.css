@@ -148,6 +148,7 @@ ul.navbar-nav li a.btn-link-3:active:focus { outline: 0; background: #EF6C00; co
 
 
 .diliput {
+	padding: 5 5 5 5;
 	width: 200px;
 	height: 51px;
 	-webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
@@ -155,6 +156,7 @@ ul.navbar-nav li a.btn-link-3:active:focus { outline: 0; background: #EF6C00; co
 }
 
 .diliput1 {
+	padding: 5 5 5 5;
 	width: 200px;
 	height: 70px;
 	-webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
@@ -162,6 +164,7 @@ ul.navbar-nav li a.btn-link-3:active:focus { outline: 0; background: #EF6C00; co
 }
 
 .diliput2 {
+	padding: 5 5 5 5;
 	width: 140px;
 	height: 80px;
 	-webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
@@ -169,6 +172,7 @@ ul.navbar-nav li a.btn-link-3:active:focus { outline: 0; background: #EF6C00; co
 }
 
 .diliput3 {
+	padding: 5 5 5 5;
 	width: 200px;
 	height: 65px;
 	-webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
