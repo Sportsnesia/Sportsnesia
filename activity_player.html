@@ -39,6 +39,15 @@
 
     <body>
 
+
+
+
+
+
+
+
+
+
  <div class="fixed-action-btn vertical" style="bottom: 45px; right: 24px;">
     <a class="btn-floating btn-large red">
       <i class="large material-icons">add</i>
@@ -48,6 +57,8 @@
       
     </ul>
   </div>
+
+
 
 
 
@@ -83,6 +94,8 @@
     <div class="nav-wrapper">
     <a href="#!"><img src="assets/img/logo-dark.png" style="float: left; margin-left: 20%; margin-top: 6px;"></a>
       <ul class="right hide-on-med-and-down">
+
+        <li><a href="#"><i class="material-icons">search</i></a></li>
         <li><a href="#"><i class="material-icons">local_activity</i></a></li>
         <li><a href="#"><i class="material-icons">explore</i></a></li>
         <li><a href="#"><i class="material-icons">group</i></a></li>
@@ -91,6 +104,49 @@
     </div>
   </nav>
 </div>
+    
+
+
+    <div class="preloader-background">
+    <div class="preloader-wrapper active">
+      <div class="spinner-layer spinner-red">
+        <div class="circle-clipper left">
+          <div class="circle"></div>
+        </div><div class="gap-patch">
+          <div class="circle"></div>
+        </div><div class="circle-clipper right">
+          <div class="circle"></div>
+        </div>
+      </div>
+
+
+
+    <style type="text/css">
+        .preloader-background {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #eee;
+    
+    position: fixed;
+    z-index: 100;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;  
+}
+    </style>
+
+    <script type="text/javascript">
+        document.addEventListener("DOMContentLoaded", function(){
+    $('.preloader-background').delay(1700).fadeOut('slow');
+    
+    $('.preloader-wrapper')
+        .delay(2700)
+        .fadeOut();
+});
+    </script>
+
 
 
      <br>
