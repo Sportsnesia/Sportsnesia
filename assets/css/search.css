@@ -15,7 +15,9 @@ body {
 	font-family: 'Josefin Sans', sans-serif; font-size: 17px;
 }
 
-
+h5 {
+	text-align: center;
+}
 
 strong { font-weight: 500; }
 
