@@ -45,14 +45,17 @@
 					<a class="navbar-brand" href="index.html">One Apps For All Your Need Sports</a>
 				</div>
 				<!-- Collect the nav links, forms, and other content for toggling -->
+
+               
+
 				<div class="collapse navbar-collapse" id="top-navbar-1">
 					<ul class="nav navbar-nav navbar-right">
-					<li><a class="btn btn-link-3" href="#">Become Partners?</a></li>
-						<li><a href="AboutUs.html">About Us</a></li>
+					<li><a class="btn btn-link-3" href="#"><i class="material-icons">search</i></a></li>
+						<li><a href="AboutUs.html"><i class="material-icons">local_activity</i></a></li>
 						
-						<li><a href="faq.html">FAQ</a></li>
-						<li><a class="btn btn-link-3" href="signup.html" target="_blank">REGISTER</a></li>
-						<li><a class="btn btn-link-3" href="login.html" target="_blank">LOGIN</a></li>
+						<li><a href="faq.html"><i class="material-icons">explore</i></a></li>
+						<li><a class="btn btn-link-3" href="signup.html"> <i class="material-icons">group</i></a></li>
+						<li><a href="#"><i class="material-icons">account_circle</i></a></li>
 					</ul>
 				</div>
 			</div>
@@ -94,8 +97,62 @@
                 </div>
                 <div class="grid-4">
                     <input style="width: 300px;" class="textbox form-control" type="text" name="JudulIklan" placeholder="Masukkan Aktifitas" required="Masukkan Judul">
-                </div>              
+                </div>
+
+                <div class="grid-2">
+                    Tanggal mulai Aktifitas
+                </div>
+                    <form>
+                        <label for="dt"></label>
+                        <input name="dt" type="date"/>
+                    </form>
+                <div class="grid-2">
+                    Tanggal selesai Aktifitas
+                </div>
+                    <form>
+                        <label for="dt"></label>
+                        <input name="dt" type="date"/>
+                    </form>
+                <div class="grid-2">
+                    Jenis Kelamin:
+                </div>
+                <div class="grid-4">
+                    <select name="kategori" class="drop form-control" style="width: 300px;">
+                        
+                        <option value="Category">Laki-laki & Perempuan</option>
+                        <option value="Laki-laki">laki-laki</option>
+                        <option value="perempuan">perempuan</option>
+                    </select>
+                </div>
+                          
                 
+                <div class="grid-2">
+                    Foto aktifitas
+                </div>
+                <div class="grid-4">
+                    <input type="file" name="pic" accept="image/*">
+                </div>
+                <div class="grid-2">
+                    Privasi aktifitas:
+                </div>
+                <div class="grid-4">
+                    <select name="kategori" class="drop form-control" style="width: 300px;">
+                        <option value="Category">Private</option>
+                        <option value="Teman">Teman</option>
+                        <option value="Umum">Umum</option>
+                    </select>
+                </div>
+                <div class="grid-2">
+                    mengundang teman
+                </div>
+                
+                <!-- Rounded switch -->
+                <label class="switch">
+                    <input type="checkbox">
+                    <span class="slider round"></span>
+                </label>
+
+
                 <div class="grid-2">
                     Deskripsi :
                 </div>
@@ -104,15 +161,15 @@
                 </div>
 
                 <div class="grid-2">
-                    Foto aktifitas
+                    Jumlah teman :
                 </div>
-                <div class="grid-4">
-                    <input type="file" name="pic" accept="image/*">
-                </div>
-                
+                <div class="form-group">
+                    
+
                 <div class="container" style="padding-top:20px;">
                     <button class="btn btn-success" type="submit" style="width:300px; margin-left:220px;">Upload</button>
                 </div>
+                
             </div>
             </form>
         </section>
