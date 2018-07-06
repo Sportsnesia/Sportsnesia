@@ -81,47 +81,88 @@
             <div class="row">
               <div class="col-md-8" >
                 <div class="features section-description wow fadeIn">
+
+
+
                   <div class="panel-group" id="accordion">
                     <div class="panel panel-default">
                       <div class="panel-heading">
                         <h4 class="panel-title">
                           <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion" href="#collapse1" >
-                    IDENTITAS PEMILIK</a></h4>
+                    Profil Perusahaan/Pemilik</a></h4>
                   </div>
               <div id="collapse1" class="panel-collapse collapse out">
                 <div class="panel-body">
                   <form action="/action_page.php">
                     <div class="form-group">
-                      <label for="Nama">Nama Pemilik</label>
-                      <input type="text" class="form-control" id="email">
+                      <span for="Nama">NAMA PERUSAHAAN (TEMPAT)</span>
+                      <input type="text" class="form-control" id="nama">
+                    </div>
+                    
+                </form>
+              </div>
+            </div>
+            </div>
+            </div>
+
+
+
+
+
+
+                  <div class="panel-group" id="accordion">
+                    <div class="panel panel-default">
+                      <div class="panel-heading">
+                        <h4 class="panel-title">
+                          <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion" href="#collapse2" >
+                    Data Personal</a></h4>
+                  </div>
+              <div id="collapse2" class="panel-collapse collapse out">
+                <div class="panel-body">
+                  <form action="/action_page.php">
+                    <div class="form-group">
+                      <span for="nama">NAMA PEMILIK</span>
+                      <input type="text" class="form-control" id="nama">
                     </div>
                     <div class="form-group">
-                      <label for="pwd">Alamat Pemilik</label>
+                      <span for="pwd">ALAMAT PEMILIK</span>
                       <input type="text" class="form-control" id="pwd">
                     </div>
                     <div class="form-group">
-                      <label for="pwd">No hp Pemilik</label>
+                      <span for="pwd">NOMOR TELEPON PEMILIK</span>
                       <input type="text" class="form-control" id="pwd">
                     </div>
                     <div class="form-group">
-                      <label for="pwd">Email Pemilik</label>
+                      <span for="pwd">EMAIL PEMILIK</span>
                       <input type="text" class="form-control" id="pwd">
                     </div>
                     <div class="form-group">
-                      <label>Identitas</label>
+                      <span>JENIS IDENTITAS PEMILIK</span>
                       <select name="kategori" class="drop form-control">
                           <option value="Category">KTP</option>
                           <option value="Passport">Passport</option>
                       </select>
                   </div>
                   <div class="form-group">
-                    <label for="pwd">NO Identitas Pemilik</label>
+                    <span for="pwd">NO IDENTITAS PEMILIK</span>
                     <input type="text" class="form-control" id="pwd">
                   </div>
                   <div class="grid-4">
-                    <label for="pwd">Upload Identitas Pemilik</label>
+                    <span for="pwd">UPLOAD IDENTITAS PEMILIK</span>
                       <input type="file" name="pic" accept="image/*">
+
                   </div>
+                  <div class="form-group">
+                    <span for="pwd">KOTA</span>
+                    <input type="text" class="form-control" id="pwd">
+                  </div>
+                  <div class="form-group">
+                    <span for="pwd">NO IDENTITAS PEMILIK</span>
+                    <input type="text" class="form-control" id="pwd">
+                  </div>
+
+
+
                 </form>
               </div>
             </div>
@@ -132,14 +173,14 @@
                     <div class="panel panel-default">
                       <div class="panel-heading">
                         <h4 class="panel-title">
-                          <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion" href="#collapse2" >
+                          <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion" href="#collapse3" >
                     DATA PEMBAYARAN</a></h4>
                   </div>
-              <div id="collapse2" class="panel-collapse collapse out">
+              <div id="collapse3" class="panel-collapse collapse out">
                 <div class="panel-body">
                   <form action="/action_page.php">
                     <div class="form-group">
-                      <label>Nama Bank</label>
+                      <span>Nama Bank</span>
                       <select name="kategori" class="drop form-control">
                           <option value="Category">BCA</option>
                           <option value="Passport">BNI</option>
@@ -155,11 +196,11 @@
                       </select>
                     </div>
                     <div class="form-group">
-                      <label for="pwd">No Rekening</label>
+                      <span for="pwd">No Rekening</span>
                       <input type="text" class="form-control" id="pwd">
                     </div>
                     <div class="form-group">
-                      <label>Title</label>
+                      <span>Title</span>
                       <select name="kategori" class="drop form-control">
                           <option value="Category">Bapak</option>
                           <option value="Passport">Ibu</option>
@@ -168,11 +209,11 @@
                       </select>
                     </div>
                     <div class="form-group">
-                      <label for="pwd">Nama Pemilik Rekening</label>
+                      <span for="pwd">Nama Pemilik Rekening</span>
                       <input type="text" class="form-control" id="pwd">
                     </div>
                     <div class="grid-4">
-                      <label for="pwd">Upload Scan Buku Tabungan </label>
+                      <span for="pwd">Upload Scan Buku Tabungan </span>
                       <input type="file" name="pic" accept="image/*">
                     </div>
                 </form>
