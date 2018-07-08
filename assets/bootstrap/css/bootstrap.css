@@ -4906,11 +4906,11 @@ a.label:focus {
   font-size: 12px;
   font-weight: bold;
   line-height: 1;
-  color: #fff;
+  color: #fb8c00;
   text-align: center;
   white-space: nowrap;
   vertical-align: middle;
-  background-color: #777;
+  background-color: #fff;
   border-radius: 10px;
 }
 .badge:empty {
