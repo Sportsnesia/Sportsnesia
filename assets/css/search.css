@@ -78,7 +78,7 @@ ul.navbar-nav {
 	text-transform: uppercase;
 }
 
-ul.navbar-nav li a { background: none; color: #888; border: 0; }
+ul.navbar-nav li a { background: none; color: #FB8C00; border: 0; }
 ul.navbar-nav li a:hover { background: none; color: #aaa; border: 0; }
 ul.navbar-nav li a:focus { background: none; color: #aaa; outline: 0; border: 0; }
 
