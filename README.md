@@ -18,9 +18,10 @@ Fitur Umum :
 - Login / Register ✔
 - FAQ ✔
 - Become Partners
-- About Us
+- About Us ✔
 
 Fitur User Pemain :
+- Homepages
 - Membuat Aktivitas Olahraga
 - Mencari Aktivitas Olahraga
 - Notifikasi Real Time mengenai status aktivitas olahraga (sedang berlangsung atau sudah selesai)
@@ -33,6 +34,7 @@ Fitur User Pemain :
 - TimPay
 
 Fitur User Pemilik :
+- Homepages
 - Upload Lapangan, Update Lapangan
 - Buat Event
 - Reports
