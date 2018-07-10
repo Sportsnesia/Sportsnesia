@@ -3,64 +3,63 @@ $(function () {
     function initMap() {
 
 
-        var pyrmont = {lat: -7.759816, lng: 110.408814};
-        map = new google.maps.Map(document.getElementById('map'), {
-          center: pyrmont,
-          zoom: 17
+      
+         var location = new google.maps.LatLng(-7.759816, 110.408814);
+        var mapCanvas = document.getElementById('map');
+
+       
+
+        var mapOptions = {
+            center: location,
+            zoom: 16,
+            panControl: false,
+            scrollwheel: false,
+            mapTypeId: google.maps.MapTypeId.ROADMAP
+        };
+        var map = new google.maps.Map(mapCanvas, mapOptions);
+
+        var markerImage = 'assets/img/marker.png';
+
+        var marker = new google.maps.Marker({
+            position: location,
+            map: map,
+            icon: markerImage
+        });
+        
+ var request = {
+    location: location,
+    radius: '500',
+    type: ['restaurant']
+  };
+
+
+
+      
+        var contentString = '<div class="info-window">' +
+                '<h3>Info Window Content</h3>' +
+                '<div class="info-content">' +
+                '<p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo.</p>' +
+                '</div>' +
+                '</div>';
+
+        var infowindow = new google.maps.InfoWindow({
+            content: contentString,
+            maxWidth: 400
         });
 
-        // var location = new google.maps.LatLng(-7.759816, 110.408814);
+      
 
-        // var mapCanvas = document.getElementById('map');
-        // Create the places service.
-        var service = new google.maps.places.PlacesService(map);
-        var getNextPage = null;
-        var moreButton = document.getElementById('more');
-        moreButton.onclick = function() {
-          moreButton.disabled = true;
-          if (getNextPage) getNextPage();
-        };
 
-        // Perform a nearby search.
-        service.nearbySearch(
-            {location: pyrmont, radius: 500, type: ['sport']},
-            function(results, status, pagination) {
-              if (status !== 'OK') return;
+        marker.addListener('click', function () {
+            infowindow.open(map, marker);
+        });
 
-              createMarkers(results);
-              moreButton.disabled = !pagination.hasNextPage;
-              getNextPage = pagination.hasNextPage && function() {
-                pagination.nextPage();
-              };
-            });
-      }
+        var styles = [{"featureType": "landscape", "stylers": [{"saturation": -100}, {"lightness": 65}, {"visibility": "on"}]}, {"featureType": "poi", "stylers": [{"saturation": -100}, {"lightness": 51}, {"visibility": "simplified"}]}, {"featureType": "road.highway", "stylers": [{"saturation": -100}, {"visibility": "simplified"}]}, {"featureType": "road.arterial", "stylers": [{"saturation": -100}, {"lightness": 30}, {"visibility": "on"}]}, {"featureType": "road.local", "stylers": [{"saturation": -100}, {"lightness": 40}, {"visibility": "on"}]}, {"featureType": "transit", "stylers": [{"saturation": -100}, {"visibility": "simplified"}]}, {"featureType": "administrative.province", "stylers": [{"visibility": "off"}]}, {"featureType": "water", "elementType": "labels", "stylers": [{"visibility": "on"}, {"lightness": -25}, {"saturation": -100}]}, {"featureType": "water", "elementType": "geometry", "stylers": [{"hue": "#ffff00"}, {"lightness": -25}, {"saturation": -97}]}];
 
-      function createMarkers(places) {
-        var bounds = new google.maps.LatLngBounds();
-        var placesList = document.getElementById('places');
+        map.set('styles', styles);
 
-        for (var i = 0, place; place = places[i]; i++) {
-          var image = {
-            url: place.icon,
-            size: new google.maps.Size(71, 71),
-            origin: new google.maps.Point(0, 0),
-            anchor: new google.maps.Point(17, 34),
-            scaledSize: new google.maps.Size(25, 25)
-          };
 
-          var marker = new google.maps.Marker({
-            map: map,
-            icon: image,
-            title: place.name,
-            position: place.geometry.location
-          });
+    }
 
-          var li = document.createElement('li');
-          li.textContent = place.name;
-          placesList.appendChild(li);
-
-          bounds.extend(place.geometry.location);
-        }
-        map.fitBounds(bounds);
-      }
+    google.maps.event.addDomListener(window, 'load', initMap);
 });
