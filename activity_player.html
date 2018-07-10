@@ -19,8 +19,10 @@
         <link href="/static/fontawesome/fontawesome-all.css" rel="stylesheet">
        	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
 
-
+        <!-- Google Maps -->
+        <!-- <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet"> -->
        	
+        <link rel="stylesheet" type="text/css" href="assets/css/custom.css">
 
         <!-- Favicon and touch icons -->
         <link rel="shortcut icon" href="assets/ico/favicon.png">
@@ -28,6 +30,10 @@
         <link rel="apple-touch-icon-precomposed" sizes="114x114" href="assets/ico/apple-touch-icon-114-precomposed.png">
         <link rel="apple-touch-icon-precomposed" sizes="72x72" href="assets/ico/apple-touch-icon-72-precomposed.png">
         <link rel="apple-touch-icon-precomposed" href="assets/ico/apple-touch-icon-57-precomposed.png">
+
+
+
+
 
     </head>
 
@@ -122,9 +128,14 @@
 
 <div class="col-md-12">
 
+
+    
+  
+    <div id="map"></div>
+ 
+
             
-            <!--Google map-->
-            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d988.3742083956423!2d110.37861602920952!3d-7.737005370755368!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e7a591e251a7a6d%3A0x31f904a90e11865a!2sJl.+Yudistira+No.171%2C+Wonorejo%2C+Sariharjo%2C+Ngaglik%2C+Kabupaten+Sleman%2C+Daerah+Istimewa+Yogyakarta+55581!5e0!3m2!1sid!2sid!4v1530802926717" width="100%" height="50%" frameborder="0" style="border:0" allowfullscreen></iframe>
+      
 </div>
 
             <h3>Tempat yang Sering Anda Kunjungi</h3>
@@ -308,6 +319,9 @@
         </div>
         </footer>
 </center>
+        
+
+  <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCtKzqHMn7Tz3SZk-YbMPq9fTBzD2yiN4Q&libraries=places&callback=initMap" async defer></script>
 
         <!-- Javascript -->
         <script src="assets/js/jquery-1.11.1.min.js"></script>
@@ -320,10 +334,15 @@
         <script src="assets/js/scripts.js"></script>
         
 
-    
-   
+        <!-- <script src="https://code.jquery.com/jquery-1.12.0.min.js"></script> -->
+        <!-- <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script> -->
+        
+        <script type="text/javascript" src="assets/js/custom.js"></script>
 
-    <!-- Popper js -->
+
+
+
+            <!-- Popper js -->
     <script src="assets/bootstrap/js/popper.min.js"></script>
     <!-- Bootstrap-4 js -->
     
