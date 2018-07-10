@@ -8,7 +8,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         
 
-        <title>Buat Aktifitas</title>
+        <title>Buat Tim</title>
 
         <!-- CSS -->        
         <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Josefin+Sans:300,400|Roboto:300,400,500">
@@ -53,7 +53,8 @@
 
 				<div class="collapse navbar-collapse" id="top-navbar-1">
 					<ul class="nav navbar-nav navbar-right">
-					<li><a class="btn btn-link-3" href="buat_aktifitas.html">Buat Aktifitas <i class="fas fa-calendar-plus"></i></a></li>               
+						
+            <li><a class="btn btn-link-3" href="buat_aktifitas.html">Buat Aktifitas <i class="fas fa-calendar-plus"></i></a></li>               
 
        
                         <li class="btn-group">
@@ -89,11 +90,9 @@
                       </li>
 
                         <li><a class="btn btn-link-3" href="profil_player.html">Profil <i class="fas fa-user-alt"></i></a></li>
-					
 
-
-
-                    </ul>
+            
+					</ul>
 				</div>
 			</div>
 		</nav>
@@ -105,15 +104,35 @@
         <!--  -->
         <div class="features-container section-container">
         	<div class="container">
-        	<h3>Buat Aktifitas</h3>
+        	<h3>Buat Tim</h3>
         <hr>
 
     <div class="container ">
         <section class="">
         <form class="col-sm-12">
             <div class="row">
+
+
+
                 <div class="grid-2">
-                    Kategori:
+                    Foto Tim
+                </div>
+                <div class="grid-4">
+                    <input type="file" name="pic" accept="image/*">
+                </div>
+
+
+                <div class="grid-2">
+                   Nama Tim
+                </div>
+                <div class="grid-4">
+                    <input style="width: 300px;" class="form-control" type="text"  placeholder="" aria-label="">
+
+                </div>
+
+
+                <div class="grid-2">
+                   Pilih Kategori:
                 </div>
                 <div class="grid-4">
                     <select name="kategori" class="drop form-control" style="width: 300px;">
@@ -144,28 +163,9 @@
                         
                     </select>
                 </div>
-                <div class="grid-2">
-                   Nama Aktifitas
-                </div>
-                <div class="grid-4">
-                    <input style="width: 300px;" class="form-control" type="text"  placeholder="" aria-label="">
+                
 
-                </div>
-
-                <div class="grid-2">
-                    Tanggal mulai Aktifitas
-                </div>
-                    <form>
-                        <label for="dt"></label>
-                        <input name="dt" type="date"/>
-                    </form>
-                <div class="grid-2">
-                    Tanggal selesai Aktifitas
-                </div>
-                    <form>
-                        <label for="dt"></label>
-                        <input name="dt" type="date"/>
-                    </form>
+              
                 <div class="grid-2">
                     Jenis Kelamin:
                 </div>
@@ -179,12 +179,7 @@
                 </div>
                           
                 
-                <div class="grid-2">
-                    Foto aktifitas
-                </div>
-                <div class="grid-4">
-                    <input type="file" name="pic" accept="image/*">
-                </div>
+                
                 <div class="grid-2">
                     Privasi Aktifitas
                 </div>
@@ -195,18 +190,41 @@
                         <option value="Umum">Umum</option>
                     </select>
                 </div>
+                
+
+
                 <div class="grid-2">
                     Mengundang Teman
                 </div>
-               
-                <!--Checkbox butons-->
-                <div class="btn-group" data-toggle="buttons">
-                    <label class="btn btn-default form-check-label">
-                        <input class="form-check-input" type="radio" autocomplete="off"> YA
-                    </label>
-                    <label class="btn btn-default form-check-label">
-                        <input class="form-check-input" type="radio" autocomplete="off"> TIDAK
-                    </label>
+                <div class="grid-4">
+                    
+                    <!-- Large modal -->
+<!-- Button trigger modal -->
+<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">
+  Undang Teman
+</button>
+
+<!-- Modal -->
+<div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Undang Teman</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        ...
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary">Save changes</button>
+      </div>
+    </div>
+  </div>
+</div>
+
                 </div>
 
 
@@ -224,13 +242,7 @@
                     <textarea class="textbox form-control" name="deskripsi" rows="5" cols="60" style="width:300px;"></textarea>
                 </div>
 
-                <div class="grid-2">
-                    Jumlah maksimal pengikut aktifitas 
-                </div>
-                <div class="grid-4">
-                    <input style="width: 300px;" class="form-control" type="text"  placeholder="">
-
-                </div>
+                
                     
 
                 <div class="container" style="padding-top:20px;">
