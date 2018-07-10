@@ -14,20 +14,19 @@ Kategori : Sports (Olahraga)
 Deskpripsi : Sportsnesia adalah Platform yang dapat mencari berbagai macam tempat Olahraga terdekat, Booking tempat Olahraga, dan dapat menghubungkan kamu dengan orang-orang yang bisa kamu ajak menjadi lawan dalam aktivitas olahraga. Sportsnesia bisa mencari teman olahraga berdasarkan jarak terdekat dan jenis olahraga dengan notifikasi secara real time.
 
 Fitur Umum :
-- Homepages
+- Homepages ✔ >> - (Kurang di Link)
 - Login / Register ✔
 - FAQ ✔
-- Become Partners
+- Become Partners ✔
 - About Us ✔
 
 Fitur User Pemain :
-- Homepages
-- Membuat Aktivitas Olahraga
+- Homepages >> - (Search, Informasi tanggal pada actifitas)
+- Membuat aktivitas olahraga di masa mendatang ✔
 - Mencari Aktivitas Olahraga
 - Notifikasi Real Time mengenai status aktivitas olahraga (sedang berlangsung atau sudah selesai)
 - Booking
-- Membuat aktivitas olahraga di masa mendatang
-- Buat Event
+- Buat Event ✔
 - Join Bersama orang
 - Buat Tim
 - SportsPay
@@ -35,7 +34,7 @@ Fitur User Pemain :
 
 Fitur User Pemilik :
 - Homepages
-- Upload Lapangan, Update Lapangan
-- Buat Event
+- Upload Lapangan ✔, Update Lapangan
+- Buat Event ✔
 - Reports
 - SportsPay
