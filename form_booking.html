@@ -8,7 +8,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         
 
-        <title>Booking Tempat</title>
+        <title>Form Booking</title>
 
         <!-- CSS -->        
         <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Josefin+Sans:300,400|Roboto:300,400,500">
@@ -28,6 +28,9 @@
         <link rel="apple-touch-icon-precomposed" sizes="72x72" href="assets/ico/apple-touch-icon-72-precomposed.png">
         <link rel="apple-touch-icon-precomposed" href="assets/ico/apple-touch-icon-57-precomposed.png">
 
+     
+
+
     </head>
 
     <body>
@@ -42,12 +45,16 @@
 						<span class="icon-bar"></span>
 						<span class="icon-bar"></span>
 					</button>
-					<a class="navbar-brand" href="index.html">One Apps For All Your Need Sports</a>
+					<a class="navbar-brand" href="activity_player.html">One Apps For All Your Need Sports</a>
 				</div>
 				<!-- Collect the nav links, forms, and other content for toggling -->
+
+               
+
 				<div class="collapse navbar-collapse" id="top-navbar-1">
-                    <ul class="nav navbar-nav navbar-right">
-                    <li><a class="btn btn-link-3" href="buat_aktifitas.html">Buat Aktifitas <i class="fas fa-calendar-plus"></i></a></li>               
+					<ul class="nav navbar-nav navbar-right">
+						
+            <li><a class="btn btn-link-3" href="buat_aktifitas.html">Buat Aktifitas <i class="fas fa-calendar-plus"></i></a></li>               
 
        
                         <li class="btn-group">
@@ -83,12 +90,10 @@
                       </li>
 
                         <li><a class="btn btn-link-3" href="profil_player.html">Profil <i class="fas fa-user-alt"></i></a></li>
-                    
 
-
-
-                    </ul>
-                </div>
+            
+					</ul>
+				</div>
 			</div>
 		</nav>
     
@@ -99,81 +104,135 @@
         <!--  -->
         <div class="features-container section-container">
         	<div class="container">
-        	<div class="col-sm-7 features section-description wow fadeIn">
-        	<div id="myCarousel" class="carousel slide" data-ride="carousel">
- 		 	<!-- Indicators -->
-  				<ol class="carousel-indicators">
-    			<li data-target="#myCarousel" data-slide-to="0" class="active"></li>
-    			<li data-target="#myCarousel" data-slide-to="1"></li>
-    			<li data-target="#myCarousel" data-slide-to="2"></li>
-  					</ol>
+        	<h3>Isi Data Diri (Booking)</h3>
+        <hr>
 
-  			<!-- Wrapper for slides -->
-  				<div class="carousel-inner">
-    			<div class="item active">
-      				<img src="assets\img\search\telagafutsal.jpg" alt="Los Angeles">
-    			</div>
+    <div class="container ">
+        <section class="">
+        <form class="col-sm-12">
+            <div class="row">
 
- 		   		<div class="item">
-      			<img src="assets\img\search\telagafutsal1.jpg" alt="Chicago">
-    			</div>
 
-    			<div class="item">
-      			<img src="assets\img\search\telagafutsal2.jpg" alt="New York">
-    				</div>
-  				</div>
 
-  			<!-- Left and right controls -->
-  				<a class="left carousel-control" href="#myCarousel" data-slide="prev">
-    				<span class="glyphicon glyphicon-chevron-left"></span>
-    				<span class="sr-only">Previous</span>
-  				</a>
-  				<a class="right carousel-control" href="#myCarousel" data-slide="next">
-    				<span class="glyphicon glyphicon-chevron-right"></span>
-    				<span class="sr-only">Next</span>
-  				</a>
 
-			</div>
-            <h3>Telaga futsal</h3>
-                <i style="font-size:16px" class="fa">&#xf041;</i> Caturtunggal, Depok, Sleman, DIY <br>
-               <a href="form_booking.html" class="btn btn-success">Booking</a>
+                <div class="grid-2">
+                   Nama Lengkap
+                </div>
+                <div class="grid-4">
+                    <input style="width: 300px;" class="form-control" type="text"  placeholder="" aria-label="">
+
+                </div>
+
+
+                <div class="grid-2">
+                   Pilih Lapangan:
+                </div>
+                <div class="grid-4">
+                    <select name="kategori" class="drop form-control" style="width: 300px;">
+                        <option value="Category">Pilih Jenis Lapangan</option>
+                        <option value="Futsal">LANTAI</option>
+                          <option value="Soccer">RUMPUT</option>
+                         
+                        
+                    </select>
+                </div>
+                
+
+              
+                <div class="grid-2">
+                    Jenis Kelamin:
+                </div>
+                <div class="grid-4">
+                    <select name="kategori" class="drop form-control" style="width: 300px;">
+                        
+                        <option value="Category">Laki-laki & Perempuan</option>
+                        <option value="Laki-laki">Laki-laki</option>
+                        <option value="perempuan">Perempuan</option>
+                    </select>
+                </div>
+                          
+                
+                
+                <div class="grid-2">
+                    Privasi Aktifitas
+                </div>
+                <div class="grid-4">
+                    <select name="kategori" class="drop form-control" style="width: 300px;">
+                        <option value="Privasi">Privasi</option>
+                        <option value="Teman">Teman</option>
+                        <option value="Umum">Umum</option>
+                    </select>
+                </div>
+                
+
+
+                <div class="grid-2">
+                    Mengundang Teman
+                </div>
+                <div class="grid-4">
+                    
+                    <!-- Large modal -->
+<!-- Button trigger modal -->
+<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">
+  Undang Teman
+</button>
+
+<!-- Modal -->
+<div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Undang Teman</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        ...
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary">Save changes</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+                </div>
+
+
+
+
+
+
+
+
+
+                <div class="grid-2">
+                    Deskripsi 
+                </div>
+                <div class="grid-4">
+                    <textarea class="textbox form-control" name="deskripsi" rows="5" cols="60" style="width:300px;"></textarea>
+                </div>
+
+                
+                    
+
+                <div class="container" style="padding-top:20px;">
+                    <a href="tim.html"class="btn btn-success" type="submit" style="width:300px; margin-left:220px;">Upload</a>
+                </div>
+                
             </div>
+            </form>
+        </section>
+    </div>
 
-        	
-        
-			        	
-        	<div class="col-sm-2 features section-description wow fadeIn">
-        		<div class="w3-display-container"> 
-        			<div class="container">
-        		<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d31626.06845996991!2d110.37685393409014!3d-7.762380783898689!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e7a59951ce552b3%3A0xcefc4549b79d4e26!2sTelaga+Futsal+1!5e0!3m2!1sid!2sid!4v1530541248833" width="400" height="300" frameborder="0" style="border:0" allowfullscreen></iframe>
-        			</div>
-        	</div>
-        	<br>
-        	<h4 style="margin-top: 2%; margin-left: 8%;">Fasilitas</h4>
-        	<i class="fa fa-wifi" aria-hidden="true" style="margin-top: 2%; margin-left: 8%;" data-toggle="tooltip" data-placement="bottom" title="WIFI"></i>
-        	<i style=" margin-top: 2%; margin-left: 8%;" class="fa" data-toggle="tooltip" data-placement="bottom" title="SHOWER" >&#xf2cc;</i>
-        	<i style=" margin-top: 2%; margin-left: 8%;" class="fa" data-toggle="tooltip" data-placement="bottom" title="PARKIR">&#xf1b9;</i>
-			<br><br>
-        	<h4 style="margin-top: 2%; margin-left: 8%;">Kontak</h4>
-			<i style=" margin-top: 2%; margin-left: 8%;" class="fa">&#xf095; <br>0879912121</i>
-			<i style=" margin-top: 2%; margin-left: 8%;" class="glyphicon">&#x2709;telagafutsal@gmail.com</i> 
-
-	
-			</div>
-        	</div>
-      	
-
-
-        <!--  -->
-            <div class="features-container section-container">
-        	<div class="container">
-        		
-
-        	</div>
+            </div>    
         </div>
 
 
-
+        
+     
 
 
 	           <br>
@@ -228,8 +287,8 @@
 
 
 
-	       
-        
+	       </div>
+        </div>
         </footer>
 </center>
 
@@ -243,8 +302,7 @@
         <script src="assets/js/retina-1.1.0.min.js"></script>
         <script src="assets/js/waypoints.min.js"></script>
         <script src="assets/js/scripts.js"></script>
-        
-
+      
     
    
 
